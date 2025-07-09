@@ -144,7 +144,6 @@ body{
 
 /* mobile tooltip is positioned absolutely for fade effect */
 .share-tooltip{
-    background-color: black;
     position: absolute;
     top: 50%;
     left: 32px;
@@ -157,3 +156,21 @@ body{
    transition: opacity 0.3s ease visibility 0.3s ease;
     
 }
+
+/* mobile active state: Fotter transforms */
+
+.article-footer.active{
+    background-color: var(--clr-primary-400);
+
+}
+.article-footer.active .author .author-profile{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.article-footer.active .share-tooltip { 
+    opacity: 1;
+    visibility: visible;
+}
+
+
