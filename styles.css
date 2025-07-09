@@ -50,7 +50,8 @@ body{
 /* mobile-first style */
 .container{
     display: grid;
-    max-width: 330px;background-color: var(--clr-neutral-100);
+    max-width: 330px;
+    background-color: var(--clr-neutral-100);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
@@ -82,4 +83,24 @@ body{
 
 .article-footer{
     display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    height: 78px;
+    position: relative;
+    transition: background-color 0.3se;
+    border-radius: 0 0 10px 10px;
+}
+
+.author-profile{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.author-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
 }
