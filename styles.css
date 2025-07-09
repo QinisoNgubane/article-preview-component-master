@@ -48,6 +48,7 @@ body{
 }
 
 /* mobile-first style */
+
 .container{
     display: grid;
     max-width: 330px;
@@ -190,6 +191,7 @@ body{
 /* Desktop Styles      */
 /* ------------------- */
 @media (min-width: 768px) {
+ 
     .container{
         grid-template-columns: 286px 1fr;
         max-width: 730px;
