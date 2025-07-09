@@ -41,7 +41,7 @@ body{
     background-color: var(--clr-neutral-200);
     font-size: 13px;
     display: grid;
-    pelace-content: center;
+    place-content: center;
     min-height: 100vh;
     padding: 1.5rem;
 
@@ -186,3 +186,52 @@ body{
     align-items: center;
 }
 
+/* ------------------- */
+/* Desktop Styles      */
+/* ------------------- */
+@media (min-width: 768px) {
+    .container{
+        grid-template-columns: 286px 1fr;
+        max-width: 730px;
+        
+    }
+
+.article-image{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-container{
+    padding: 32px 40px;
+}
+
+.article-heading, .article-text{
+    padding: 0;
+}
+
+.article-heading{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.article-text{
+    margin-bottom: 20px;
+}
+
+.article-footer{
+    padding: 0;
+    height: auto;
+    background-color: transparent !important;
+
+}
+
+.author-profile{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.share-container{
+    position: relative;
+}
+
+}
