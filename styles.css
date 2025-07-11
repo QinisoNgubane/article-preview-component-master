@@ -148,23 +148,23 @@ body{
     position: absolute;
     top: 50%;
     left: 32px;
-    transition: translateY(-50%);
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     gap: 16px;
-   opacity: 0;
-   visibility: hidden;
-   transition: opacity 0.3s ease visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     
 }
 
-/* mobile active state: Fotter transforms */
+/* mobile active state: Fotter transformer */
 
 .article-footer.active{
     background-color: var(--clr-primary-400);
 
 }
-.article-footer.active .author .author-profile{
+.article-footer.active .author-profile{
     opacity: 0;
     visibility: hidden;
 }
@@ -241,7 +241,7 @@ body{
     position: absolute;
     top: auto;
     left: 50%;
-    bottom: 75px;
+    bottom: 65px;
     padding: 18px 35px;
     justify-content: center;
 
@@ -262,15 +262,18 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 10px;
 
+}
+
     /* Desktop Active state - controlled by tooltip's own .active class */
     .share-tooltip.active{
-        opacity: 0;
+        opacity: 1;
         visibility: visible;
         transform: translateX(-50) scale(1) translateY(0);
 
     }
+    
     /* The traingle for desktop*/
-    .share-tooltip::before{
+    .share-tooltip::before {
         content: '';
         position: absolute;
         top: 100%;
@@ -280,11 +283,6 @@ body{
         border-style: solid;
         border-color: var(--clr-primary-400) transparent transparent transparent;
     }
-
-
-}
-
-
 
 
 }
