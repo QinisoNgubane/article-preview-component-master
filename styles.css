@@ -158,6 +158,19 @@ body{
     
 }
 
+/* this is the cleaned up rule for for icon sizing */
+.social-icon{
+    width: 24px;
+    height: 24px;
+
+}
+
+/* This is the new rule that makes your icon white so they are visible */
+.social-icon{
+    width: 24px;
+    height: 24px;
+}
+
 /* mobile active state: Fotter transformer */
 
 .article-footer.active{
@@ -185,6 +198,13 @@ body{
     display: flex;
     gap: 16px;
     align-items: center;
+}
+/* this is the new rule that fixed the icon visibility */
+.share-links a {
+    display: block;
+    height: 24px;
+    width: 24px;
+
 }
 
 /* ------------------- */
